@@ -29,10 +29,10 @@ var About = require('./components/about/aboutPage');
     });
 
     function render() {
-        var route = window.location.hash.substr(1);
+        var route = win.location.hash.substr(1);
         React.render(<App route={route} />, document.getElementById('app'));
     }
 
-    window.addEventListener('hashchange', render);
+    win.addEventListener('hashchange', render);
     render();
 })(window);
