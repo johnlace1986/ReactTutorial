@@ -1,6 +1,8 @@
 $ = jQuery = require('jquery');
 
 var React = require('react');
+
+var Header = require('./components/common/header');
 var Home = require('./components/homePage');
 var About = require('./components/about/aboutPage');
 
@@ -22,6 +24,7 @@ var About = require('./components/about/aboutPage');
 
             return (
                 <div>
+                    <Header />
                     <Child />
                 </div>
             );
